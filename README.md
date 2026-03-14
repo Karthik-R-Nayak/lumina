@@ -51,36 +51,21 @@ cd lumina
 
 cd backend
 npm install
-
 Create a `.env` file and add:
 
-```
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
-```
 
 Start the backend server:
-
-```
 npm start
-```
-
----
 
 ## 💻 Frontend Setup
-
-```
 cd frontend
 npm install
 npm run dev
-```
-
----
 
 ## 🌐 API Routes
-
-Example routes:
 
 | Method | Route       | Description         |
 | ------ | ----------- | ------------------- |
@@ -89,17 +74,15 @@ Example routes:
 | POST   | /api/posts  | Create post         |
 | GET    | /api/search | Search posts        |
 
----
+
 
 ## 📸 Screenshots
 
-Add screenshots of your app here.
+ screenshots of app 
 
-Example:
-
-```
-![Homepage](screenshots/home.png)
-```
+![Homepage](demo/homepage.png)
+![landingpage](demo/landingpage.png)
+![posts](demo/posts.png)
 
 ## 👨‍💻 Author
 
