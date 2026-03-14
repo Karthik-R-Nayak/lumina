@@ -1,0 +1,125 @@
+.settings-container {
+  min-height: 100vh;
+  background: #f5f6fb;
+  padding-bottom: 80px;
+}
+
+.settings-shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px clamp(20px, 5vw, 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.settings-title {
+  font-size: clamp(32px, 4vw, 44px);
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.settings-card {
+  background: white;
+  padding: 28px;
+  border-radius: 32px;
+  box-shadow: 0 25px 55px rgba(15, 23, 42, 0.1);
+  margin-bottom: 10px;
+}
+
+.settings-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.settings-row:last-child {
+  border-bottom: none;
+}
+
+.settings-row p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0f172a;
+  margin: 0;
+}
+
+.arrow {
+  font-size: 24px;
+  color: rgba(15, 23, 42, 0.5);
+  font-weight: 300;
+}
+
+/* Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input:checked + .slider {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+/* Logout button */
+.logout-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 999px;
+  border: none;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #e63946 0%, #d62839 100%);
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 25px 45px rgba(230, 57, 70, 0.4);
+}
+
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 32px 55px rgba(230, 57, 70, 0.5);
+}
+
+.logout-btn:active {
+  transform: translateY(0);
+}
